@@ -2,8 +2,6 @@ from abc import ABC, abstractmethod
 class car(ABC):
     def paySlip(self, amount):
         print("Your purchase amount: ",amount)
-#this function is tellin gus to pass in an argument, but we wont't tell you how or what kind
-#of data it will be
         @abstractmethod
         def payment(self, amount):
             pass
@@ -14,5 +12,5 @@ class DebitCardPayment(car):
         print('Your purchase amount of {} exceeded your $100 limit'.format(amount))
 
 obj = DebitCardPayment()
-obj.paySlip("$400")
-obj.payment("$400")
+obj.paySlip("$600")
+obj.payment("$600")
